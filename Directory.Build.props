@@ -1,0 +1,7 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <Product>NLog Logger Provider for Microsoft.Extensions.Logging.</Product>
+  </PropertyGroup>
+  
+</Project>

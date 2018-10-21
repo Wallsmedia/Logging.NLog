@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{58A40194-3598-484D-A9A3-7208C0C229B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{642E6A4A-C7A0-4A46-ACFD-185012F05077}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{040C4C17-BD50-40CB-8B57-4DBBDE54F033}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		LICENSE = LICENSE
+		NuGet.config = NuGet.config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{9B66AD7E-362F-428C-9B1D-A06B4DC396A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestWebApplication", "samples\RestWebApplication\RestWebApplication.csproj", "{B468AAF0-EA49-4D0A-B6D5-1D5999B17263}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Extensions.Logging.NLog", "src\Microsoft.Extensions.Logging.NLog\Microsoft.Extensions.Logging.NLog.csproj", "{28337745-EF34-46A9-80A7-14295D16E619}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Extensions.Logging.NLog.Test", "test\Microsoft.Extensions.Logging.NLog.Test\Microsoft.Extensions.Logging.NLog.Test.csproj", "{476AD01C-D8C7-41B0-A81C-D954419F5D5F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestWebApplication-Logger", "samples\RestWebApplication-Logger.NLog\RestWebApplication-Logger.csproj", "{24113DAB-F40F-4B32-9306-87FF8420C215}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B468AAF0-EA49-4D0A-B6D5-1D5999B17263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B468AAF0-EA49-4D0A-B6D5-1D5999B17263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B468AAF0-EA49-4D0A-B6D5-1D5999B17263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B468AAF0-EA49-4D0A-B6D5-1D5999B17263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28337745-EF34-46A9-80A7-14295D16E619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28337745-EF34-46A9-80A7-14295D16E619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28337745-EF34-46A9-80A7-14295D16E619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28337745-EF34-46A9-80A7-14295D16E619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{476AD01C-D8C7-41B0-A81C-D954419F5D5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{476AD01C-D8C7-41B0-A81C-D954419F5D5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{476AD01C-D8C7-41B0-A81C-D954419F5D5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{476AD01C-D8C7-41B0-A81C-D954419F5D5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24113DAB-F40F-4B32-9306-87FF8420C215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24113DAB-F40F-4B32-9306-87FF8420C215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24113DAB-F40F-4B32-9306-87FF8420C215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24113DAB-F40F-4B32-9306-87FF8420C215}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B468AAF0-EA49-4D0A-B6D5-1D5999B17263} = {9B66AD7E-362F-428C-9B1D-A06B4DC396A5}
+		{28337745-EF34-46A9-80A7-14295D16E619} = {58A40194-3598-484D-A9A3-7208C0C229B9}
+		{476AD01C-D8C7-41B0-A81C-D954419F5D5F} = {642E6A4A-C7A0-4A46-ACFD-185012F05077}
+		{24113DAB-F40F-4B32-9306-87FF8420C215} = {9B66AD7E-362F-428C-9B1D-A06B4DC396A5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F98EE67-4E05-4208-9C73-209F7CF177D1}
+	EndGlobalSection
+EndGlobal

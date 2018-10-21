@@ -11,12 +11,14 @@
     <FileVersion>2.1.0</FileVersion>
     <AssemblyVersion>2.1.0</AssemblyVersion>
 
-    <PackageId>Microsoft.Extensions.Logging.NLog</PackageId>
+    <PackageId>Wallsmedia.Microsoft.Extensions.Logging.NLog</PackageId>
     <Description>NLog Logger Provider for Microsoft.Extensions.Logging.
 See readme.md  https://github.com/Wallsmedia/Logging.NLog </Description>
     
-    <Authors>Alex &amp; Artem Paskhin</Authors>
-    <Copyright>Copyright (c) .NET Foundation. All rights reserved.</Copyright>
+    <Authors>Alex and Artem Paskhin </Authors>
+    
+    <Copyright>Copyright (c) .NET Foundation, Wallsmedia, Alex Paskhin, Artem Paskhin. All rights reserved.</Copyright>
+    
     <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/Wallsmedia/Logging.NLog</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
@@ -38,7 +40,7 @@ See readme.md  https://github.com/Wallsmedia/Logging.NLog </Description>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>../../build/Key.snk</AssemblyOriginatorKeyFile>
-    <Company />
+    <Company>Wallsmedia</Company>
   </PropertyGroup>
 
   <PropertyGroup Condition="$(Configuration) == 'Release'">

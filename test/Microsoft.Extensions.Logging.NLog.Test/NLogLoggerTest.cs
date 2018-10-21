@@ -1,9 +1,12 @@
 // \\     |/\  /||
 //  \\ \\ |/ \/ ||
 //   \//\\/|  \ || 
-// Copyright © Artem & Alexander Paskhin 2013-2018. All rights reserved.
-// Wallsmedia 2018:{Artem & Alexander Paskhin}
+// Copyright (c) .NET Foundation. All rights reserved.
+// Copyright (c) Wallsmedia 2018. All rights reserved.
+// Copyright (c) Alexander Paskhin. All rights reserved.
+// Copyright (c) Artem Paskhin.     All rights reserved.
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
+
 // NLog Logger Provider Test
 
 using Microsoft.Extensions.Logging.NLog;

@@ -15,9 +15,9 @@
     <Description>NLog Logger Provider for Microsoft.Extensions.Logging.
 See readme.md  https://github.com/Wallsmedia/Logging.NLog </Description>
     
-    <Authors>Alex and Artem Paskhin </Authors>
     
-    <Copyright>Copyright (c) .NET Foundation, Wallsmedia, Alex Paskhin, Artem Paskhin. All rights reserved.</Copyright>
+    
+   
     
     <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/Wallsmedia/Logging.NLog</PackageProjectUrl>
@@ -40,7 +40,6 @@ See readme.md  https://github.com/Wallsmedia/Logging.NLog </Description>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>../../build/Key.snk</AssemblyOriginatorKeyFile>
-    <Company>Wallsmedia</Company>
   </PropertyGroup>
 
   <PropertyGroup Condition="$(Configuration) == 'Release'">

@@ -12,7 +12,7 @@ It allows to simplify using NLog by utilizing [ILoggerFactory](https://github.co
 
 ## Nuget.org
 
-- Nuget package [Microsoft.Extensions.Logging.NLog](https://www.nuget.org/packages/Microsoft.Extensions.Logging.NLog/)
+- Nuget package [Microsoft.Extensions.Logging.NLog](https://www.nuget.org/packages/Wallsmedia.Microsoft.Extensions.Logging.NLog/)
 
 
 
@@ -84,7 +84,7 @@ You have to define two configurations:
 The **NLogLoggerSettings** section defines the Category Name "filter" and Category Name "mapper". 
 
  
-``` json
+``` C#
 {
 "NLogLoggerSettings": {
 

@@ -2,9 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Product>Sample for NLog Logger Provider for Microsoft.Extensions.Logging.</Product>
   </PropertyGroup>
-
+  
   <ItemGroup>
+   
     <Compile Remove="wwwroot\**" />
     <Content Remove="wwwroot\**" />
     <EmbeddedResource Remove="wwwroot\**" />

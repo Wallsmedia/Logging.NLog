@@ -1,7 +1,13 @@
 ﻿<Project>
 
   <PropertyGroup>
+
+    <CurrentYear>$([System.DateTime]::Now.ToString("yyyy"))</CurrentYear>
     <Product>NLog Logger Provider for Microsoft.Extensions.Logging.</Product>
+    <Authors>Alex Paskhin; Artem Paskhin</Authors>
+    <Copyright>Copyright (c) $(CurrentYear) Wallsmedia Ltd. All rights reserved.</Copyright>
+    <Company>Wallsmedia Ltd</Company>
+
   </PropertyGroup>
   
 </Project>

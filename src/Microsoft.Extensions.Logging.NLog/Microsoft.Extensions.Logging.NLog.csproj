@@ -7,9 +7,9 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>2.1.0</Version>
-    <FileVersion>2.1.0</FileVersion>
-    <AssemblyVersion>2.1.0</AssemblyVersion>
+    <Version>2.2.0</Version>
+    <FileVersion>2.2.0</FileVersion>
+    <AssemblyVersion>2.2.0</AssemblyVersion>
 
     <PackageId>Wallsmedia.Microsoft.Extensions.Logging.NLog</PackageId>
     <Description>NLog Logger Provider for Microsoft.Extensions.Logging.
@@ -26,14 +26,14 @@ See readme.md  https://github.com/Wallsmedia/Logging.NLog </Description>
     
     <OutputType>Library</OutputType>
     <PackageTags>NLog  Log Logger</PackageTags>
-    <PackageReleaseNotes>Singed assembly; version for netstandard2.0 and Microsoft.Extensions.Logging 2.1.1-*</PackageReleaseNotes>
+    <PackageReleaseNotes>Singed assembly; version for netstandard2.0 and Microsoft.Extensions.Logging 2.2.0-*</PackageReleaseNotes>
   </PropertyGroup>
  
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.1.1" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.1.1" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.1.1" />
-    <PackageReference Include="NLog" Version="4.5.10" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.2.0" />
+    <PackageReference Include="NLog" Version="4.5.11" />
   </ItemGroup>
 
   <PropertyGroup>

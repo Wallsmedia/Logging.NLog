@@ -1,5 +1,8 @@
 # Microsoft.Extensions.Logging.NLog
 
+#### Version 3.0.0
+ - Support SDK v.3.0.0
+
 #### Version 2.2.0
  - Support SDK v.2.2.0
 
@@ -168,9 +171,6 @@ If you decided to use additional filtering from **Microsoft.Extensions.Logging**
 ``` C#
  logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
 ```
-
-or it will be added  by default in .Net Core > 2.0+  see [WebHost.cs](https://github.com/aspnet/MetaPackages/blob/dev/src/Microsoft.AspNetCore/WebHost.cs))
-
-So, It is recommend to read "how to configure the Logging'" section from ASP.NET CORE web guide [Log filtering](https://docs.microsoft.com/en-gb/aspnet/core/fundamentals/logging/?view=aspnetcore-2.1&tabs=aspnetcore2x#log-filtering). 
+So, It is recommend to read "how to configure the Logging'" section from ASP.NET CORE web guide https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0#configuration. 
 
 

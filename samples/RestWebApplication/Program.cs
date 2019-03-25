@@ -41,6 +41,7 @@ namespace RestWebApplication
                 throw new MissingMemberException($"Missing configuration section '{nameof(NLogLoggerSettings)}'");
             }
 
+            logging.ClearProviders();
             logging.AddNLogLogger(logJsonCgf, nLoggingConfiguration);
 
             logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));

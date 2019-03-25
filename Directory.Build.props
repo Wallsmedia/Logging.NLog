@@ -1,4 +1,5 @@
 ﻿<Project>
+  <Import Project="version.props" />
 
   <PropertyGroup>
 
@@ -8,6 +9,21 @@
     <Copyright>Copyright (c) $(CurrentYear) Wallsmedia Ltd. All rights reserved.</Copyright>
     <Company>Wallsmedia Ltd</Company>
 
+    
   </PropertyGroup>
+
+  <PropertyGroup>
+      <DotNetCoreAppTarget>netcoreapp3.0</DotNetCoreAppTarget>
+      <DotNetCoreStandardTarget>netstandard2.0</DotNetCoreStandardTarget>
+      <XmlResultVersion>3.0.0</XmlResultVersion>
+    </PropertyGroup>
+
+    <PropertyGroup>
+      <DotNetCoreAppVersion>3.0.0-*</DotNetCoreAppVersion>
+      <AspNetCoreVersion>3.0.0-*</AspNetCoreVersion>
+    </PropertyGroup>
+    
+    
+    
   
 </Project>

@@ -1,45 +1,49 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>$(DotNetCoreAppTarget)</TargetFramework>
     <AssemblyName>Microsoft.Extensions.Logging.NLog</AssemblyName>
     <RootNamespace>Microsoft.Extensions.Logging.NLog</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>2.2.0</Version>
-    <FileVersion>2.2.0</FileVersion>
-    <AssemblyVersion>2.2.0</AssemblyVersion>
+    <Version>$(CorePackageVersion)</Version>
+    <FileVersion>$(CoreVersion)</FileVersion>
+    <AssemblyVersion>$(CoreVersion)</AssemblyVersion>
 
     <PackageId>Wallsmedia.Microsoft.Extensions.Logging.NLog</PackageId>
     <Description>NLog Logger Provider for Microsoft.Extensions.Logging.
 See readme.md  https://github.com/Wallsmedia/Logging.NLog </Description>
     
-    
-    
-   
-    
-    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/Wallsmedia/Logging.NLog</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/Wallsmedia/Logging.NLog.git</RepositoryUrl>
     
     <OutputType>Library</OutputType>
-    <PackageTags>NLog  Log Logger</PackageTags>
-    <PackageReleaseNotes>Singed assembly; version for netstandard2.0 and Microsoft.Extensions.Logging 2.2.0-*</PackageReleaseNotes>
+    <PackageTags>NLog;Log;Logger</PackageTags>
+    <PackageReleaseNotes>Singed assembly; version for netcoreapp3.0 </PackageReleaseNotes>
   </PropertyGroup>
  
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.2.0" />
-    <PackageReference Include="NLog" Version="4.5.11" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="$(AspNetCoreVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="$(AspNetCoreVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="$(AspNetCoreVersion)" />
+    <PackageReference Include="NLog" Version="4.6.0" />
+  </ItemGroup>
+ 
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
   <PropertyGroup>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>../../build/Key.snk</AssemblyOriginatorKeyFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="$(Configuration) == 'Release'">

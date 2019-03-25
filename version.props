@@ -1,0 +1,8 @@
+<Project>
+  <PropertyGroup>
+    
+    <CorePackageVersion>3.0.0</CorePackageVersion>
+    <CoreVersion>3.0.0</CoreVersion>
+
+  </PropertyGroup>
+</Project>

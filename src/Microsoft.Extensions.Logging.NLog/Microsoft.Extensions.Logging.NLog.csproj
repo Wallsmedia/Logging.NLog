@@ -1,50 +1,63 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>$(DotNetCoreAppTarget)</TargetFramework>
     <AssemblyName>Microsoft.Extensions.Logging.NLog</AssemblyName>
     <RootNamespace>Microsoft.Extensions.Logging.NLog</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>2.2.0</Version>
-    <FileVersion>2.2.0</FileVersion>
-    <AssemblyVersion>2.2.0</AssemblyVersion>
+    <Version>$(CorePackageVersion)</Version>
+    <FileVersion>$(CoreVersion)</FileVersion>
+    <AssemblyVersion>$(CoreVersion)</AssemblyVersion>
 
     <PackageId>Wallsmedia.Microsoft.Extensions.Logging.NLog</PackageId>
-    <Description>NLog Logger Provider for Microsoft.Extensions.Logging.
-See readme.md  https://github.com/Wallsmedia/Logging.NLog </Description>
-    
-    
-    
-   
-    
-    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <Description>
+      NLog Logger Provider for Microsoft.Extensions.Logging.
+      See readme.md  https://github.com/Wallsmedia/Logging.NLog
+    </Description>
+
+    <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/Wallsmedia/Logging.NLog</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/Wallsmedia/Logging.NLog.git</RepositoryUrl>
-    
+
     <OutputType>Library</OutputType>
-    <PackageTags>NLog  Log Logger</PackageTags>
-    <PackageReleaseNotes>Singed assembly; version for netstandard2.0 and Microsoft.Extensions.Logging 2.2.0-*</PackageReleaseNotes>
+    <PackageTags>NLog;Log;Logger</PackageTags>
+    <PackageReleaseNotes>Released for  Microsoft.AspNetCore.App 3.0.0</PackageReleaseNotes>
   </PropertyGroup>
- 
+
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.2.0" />
-    <PackageReference Include="NLog" Version="4.5.11" />
+    <PackageReference Include="NLog" Version="4.6.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Properties\launchSettings.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <Pack>False</Pack>
+    </Content>
   </ItemGroup>
 
   <PropertyGroup>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>../../build/Key.snk</AssemblyOriginatorKeyFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="$(Configuration) == 'Release'">
+    
+    <IsPackable>true</IsPackable>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageOutputPath>../../.nupkgs</PackageOutputPath>
+    
   </PropertyGroup>
 
 </Project>

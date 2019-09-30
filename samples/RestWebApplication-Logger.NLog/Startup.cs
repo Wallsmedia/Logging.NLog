@@ -1,4 +1,4 @@
-﻿// \\     |/\  /||
+// \\     |/\  /||
 //  \\ \\ |/ \/ ||
 //   \//\\/|  \ || 
 // Copyright (c) Wallsmedia 2019. All rights reserved.
@@ -32,7 +32,7 @@ namespace RestWebApplication
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc()
+            services.AddControllers()
                 .AddNewtonsoftJson();
         }
 
@@ -43,20 +43,17 @@ namespace RestWebApplication
             {
                 app.UseDeveloperExceptionPage();
             }
-            else
-            {
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
 
             app.UseHttpsRedirection();
 
-            app.UseRouting(routes =>
-            {
-                routes.MapControllers();
-            });
+            app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
         }
     }
 }

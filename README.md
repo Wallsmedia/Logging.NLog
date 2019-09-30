@@ -1,7 +1,7 @@
 # Microsoft.Extensions.Logging.NLog
 
 #### Version 3.0.0
- - Support SDK v.3.0.0
+ - **Supports only **Microsoft.AspNetCore.App** 3.0.0-***
 
 #### Version 2.2.0
  - Support SDK v.2.2.0

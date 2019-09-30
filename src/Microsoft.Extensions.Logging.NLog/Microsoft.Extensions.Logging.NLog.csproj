@@ -38,6 +38,13 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Properties\launchSettings.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <Pack>False</Pack>
+    </Content>
+  </ItemGroup>
+
   <PropertyGroup>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
     <SignAssembly>true</SignAssembly>
@@ -46,9 +53,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="$(Configuration) == 'Release'">
+    
     <IsPackable>true</IsPackable>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageOutputPath>../../.nupkgs</PackageOutputPath>
+    
   </PropertyGroup>
 
 </Project>

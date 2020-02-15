@@ -7,6 +7,8 @@ cross platform .NET IDE**
 
 <a href="https://www.jetbrains.com/?from=XmlResult"> <img src="https://github.com/Wallsmedia/XmlResult/blob/master/Logo/resharper/logo.png?raw=true" Width="40p" /></a> **The Visual Studio Extension for .NET Developers**
 
+#### Version 3.1.1
+ - **Supports only **Microsoft.AspNetCore.App** 3.1.101-***
 
 #### Version 3.0.0
  - **Supports only **Microsoft.AspNetCore.App** 3.0.0-***

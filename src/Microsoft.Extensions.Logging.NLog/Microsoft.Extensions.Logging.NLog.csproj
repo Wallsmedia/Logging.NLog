@@ -24,7 +24,7 @@
 
     <OutputType>Library</OutputType>
     <PackageTags>NLog;Log;Logger</PackageTags>
-    <PackageReleaseNotes>Released for  Microsoft.AspNetCore.App 3.0.0</PackageReleaseNotes>
+    <PackageReleaseNotes>Released for  Microsoft.AspNetCore.App 3.1.101-*</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
